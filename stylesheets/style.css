@@ -1,0 +1,254 @@
+/*----------------------------------------------------------------.
+|                       General Styles                            |
+`----------------------------------------------------------------*/
+
+html, body {
+	width: 100%;
+	height: 100%;
+	font: 200 12px/18px 'Montserrat';
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+.counter {
+	position: absolute;
+	z-index: 100;
+	bottom: 0;
+	right: 0;
+}
+
+/*----------------------------------------------------------------.
+|                            Typography                           |
+`----------------------------------------------------------------*/
+
+h2 {
+	font-size: 3em;
+	text-transform: uppercase;
+}
+h3 {
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: .3em;
+	padding-left: .3em;
+	margin-bottom: 2rem;
+}
+h3:last-child {
+	margin-bottom: 0;
+}
+
+p,
+.list li {
+	font-size: 1.4rem;
+	line-height: 1.5;
+	max-width: 60rem;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 1em;
+}
+p:last-child,
+.list li:last-child {
+	margin-bottom: 0;
+}
+.list {
+	list-style-type: disc;
+}
+
+.strike {
+    display: block;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.strike span {
+    position: relative;
+    display: inline-block;
+}
+.strike span:before,
+.strike span:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 9999px;
+    height: 1px;
+    background-color: white;
+}
+.strike span:before {
+    right: 100%;
+    margin-right: 35px;
+}
+.strike span:after {
+    left: 100%;
+    margin-left: 35px;
+}
+
+.blockletter {
+	display: inline-block;
+	width: 2em;
+	text-align: center;
+	line-height: 2em;
+	background-color: black;
+	color: white;
+	border-radius: .25em;
+	margin-bottom: .1em;
+}
+.dark .blockletter {
+	background-color: white;
+	color: black;
+	margin-bottom: .2em;
+}
+
+/*----------------------------------------------------------------.
+|                            Centering                            |
+`----------------------------------------------------------------*/
+
+.h-center-wrap {
+    text-align: center;
+}
+.h-center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.v-center-wrap {
+    font-size: 0;
+}
+.v-center-wrap:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+.v-center-box {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 1rem;
+    max-width: 100%;
+}
+
+/*----------------------------------------------------------------.
+|                             Pages                               |
+`----------------------------------------------------------------*/
+
+.full-page {
+    width: 100%;
+    height: 100%;
+}
+
+.row-banner {
+	padding: 15rem 4rem 11rem 4rem;
+}
+.row {
+	padding: 5rem 4rem;
+}
+.dark {
+	background-color: black;
+	color: white;
+}
+
+/*----------------------------------------------------------------.
+|                        Icons and Images                         |
+`----------------------------------------------------------------*/
+
+.icon {
+    display: block;
+    width: 2.5rem;
+    height: 2.5rem;
+    cursor: pointer;
+}
+.icon-top {
+	position: absolute;
+	left: 2rem;
+	top: 2rem;
+}
+
+/*----------------------------------------------------------------.
+|                           Navigation                            |
+`----------------------------------------------------------------*/
+
+.primary-nav {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 1);
+	z-index: 1000;
+	border-right: 2px solid white;
+	transform: translateX( -100% );
+	transition: all 200ms ease-in-out;
+	color: white;
+	padding: 7rem 3rem 4rem 3rem;
+	overflow: auto;
+}
+.primary-nav li {
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: .3em;
+	margin-bottom: .5rem;
+}
+.primary-nav li:last-child {
+	margin-bottom: 0;
+}
+.primary-nav.visible {
+	transform: translateX( 0 );
+}
+@media all and (min-width: 300px) {
+	.primary-nav {
+		width: 25rem;
+	}
+}
+
+/*----------------------------------------------------------------.
+|                              Home                               |
+`----------------------------------------------------------------*/
+
+.logo {
+    font-size: .6rem;
+    line-height: 1.5;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: white;
+}
+.logo div:first-child {
+    font-size: .9em;
+    letter-spacing: 1.5em;
+    padding-left: 1.5em;
+}
+.logo h1 {
+    font-size: 3em;
+    letter-spacing: .2em;
+    padding-left: .2em;
+    line-height: 2.25;
+    font-weight: 200;
+    margin: 0;
+}
+.logo .year {
+    font-size: 1.2em;
+    letter-spacing: 1em;
+    margin-right: 0em;
+    padding-left: 1em;
+}
+@media all and (min-width: 500px) {
+    .logo {
+        font-size: .75rem;
+    }
+}
+@media all and (min-width: 700px) {
+    .logo {
+        font-size: 1rem;
+    }
+}
+
+/*----------------------------------------------------------------.
+|                          Backgrounds                            |
+`----------------------------------------------------------------*/
+
+.bg {
+	background-size: cover;
+	background-position: center;
+}
+
+.home-bg {
+	background-image: url('../assets/images/bg-min.jpg');
+}
