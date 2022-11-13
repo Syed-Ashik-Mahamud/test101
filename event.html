@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0; user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Robu Dev Team">
+    <title>ROBU'10</title>
+    <link rel="shortcut icon" href="./img/logo.ico?v=1" type="image/x-icon">
+    <!-- <link rel="stylesheet" href="css/normalize.css"> -->
+    <link rel="stylesheet" href="css/skeleton.min.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/style2.css?v=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- ?v=1 ==>> To remove browser cache -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <script src="scripts/jquery.min.js"></script>
+    <script src="scripts/wow.min.js"></script>
+    <!-- <script src="https://use.fontawesome.com/7c0b3ec4f2.js"></script> -->
+    <script src="scripts/scripts.js"></script>
+    <style>
+        .wow {
+            visibility: hidden;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="overlay">
+        <div class="event-details 1-event">
+            <i class="fa fa-3x fa-times modal-close-btn" eventNo="1" aria-hidden="true"></i>
+            <div class="details">
+                <h1>Robo Soccer</h1>
+                <div class="details-card">
+                    <div class="details-item details-img">
+                        <img src="images/events/CnS5w0GUAAAKd0Y.jpg" alt="Event">
+                    </div>
+                    <div class="details-item details-category">
+                        <h5>Details</h5>
+                        <table>
+                            <tr>
+                                <td class="bold">Category</td>
+                                <td>:</td>
+                                <td>Soccer Bot</td>
+                            </tr>
+                            <tr>
+                                <td class="bold">Date</td>
+                                <td>:</td>
+                                <td class="dateEvent">Soon</td>
+                            </tr>
+                            <tr>
+                                <td class="bold">Registration Fee</td>
+                                <td>:</td>
+                                <td>1000 TK</td>
+                            </tr>
+                            <tr>
+                                <td class="bold">Max member in a team</td>
+                                <td>:</td>
+                                <td>5</td>
+                            </tr>
+                        </table>
+                        <p>
+                            <i>(Download Rules for more details)</i>
+                        </p>
+                    </div>
+                    <div class="details-item details-rules">
+                        <div>
+                            Show your skill to make your own Soccerbot and win exciting Prize
+                        </div>
+                        <div class="prizeMoney">
+                            <h5>PRIZE MONEY</h5>
+                            <p>1st Prize: 20K BDT</p>
+                            <p>2nd Prize: 10K BDT</p>
+                        </div>
+
+                    </div>
+                    <div class="details-item details-btns">
+                        <button class="btn details-btn" id="techBtn">Rules</button>
+                        <button class="btn details-btn RegisterBtn">Register</button>
+                        <div class="bold green small-font">(OFFLINE REGISTRATION DESK IS ALSO AVAILABLE TO REGISTER DIRECTLY ON THE EVENT DATE)</div>
+                        <div class="bold red small-font">* Prize money is subject to change based on the number of participants</div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="event-details 2-event">
+            <i class="fa fa-3x fa-times modal-close-btn" eventNo="2" aria-hidden="true"></i>
+            <div class="details">
+                <h1>Rc Boat Race</h1>
+                <div class="details-card">
+                    <div class="details-item details-img">
+                        <img src="./images/events/boatrace.jpg" alt="Event">
+                    </div>
+                    <div class="details-item details-category">
+                        <h5>Details</h5>
+                        <table>
+                            <tr>
+                                <td class="bold">Category</td>
+                                <td>:</td>
+                                <td>Surface Wter Boat Race</td>
+                            </tr>
+                            <tr>
+                                <td class="bold">Date</td>
+                                <td>:</td>
+                                <td class="dateEvent">Soon</td>
+                            </tr>
+                            <tr>
+                                <td class="bold">Registration Fee</td>
+                                <td>:</td>
+                                <td>1200 tk</td>
+                            </tr>
+                            <tr>
+                                <td class="bold">Max member in a team</td>
+                                <td>:</td>
+                                <td>5</td>
+                            </tr>
+                        </table>
+                        <p>
+                            <i>(Download Rules for more details)</i>
+                        </p>
+                    </div>
+                    <div class="details-item details-rules">
+                        <div>
+                            Show your skill to build prototype based of any kind of material, boards, bricks etc.
+                        </div>
+                        <div class="prizeMoney">
+                            <h5>PRIZE MONEY</h5>
+                            <p>1st Prize: 20k Tk</p>
+                            <p>2nd Prize: 10k Tk</p>
+                        </div>
+
+                    </div>
+                    <div class="details-item details-btns">
+                        <button class="btn details-btn" id="bmaBtn">Rules</button>
+                        <button class="btn details-btn RegisterBtn">Register</button>
+                        <div class="bold green small-font">(OFFLINE REGISTRATION DESK IS ALSO AVAILABLE TO REGISTER DIRECTLY ON THE EVENT DATE)</div>
+                        <div class="bold red small-font">* Prize money is subject to change based on the number of participants</div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="event-details 3-event">
+            <i class="fa fa-3x fa-times modal-close-btn" eventNo="3" aria-hidden="true"></i>
+            <div class="details">
+                <h1>Code Strom</h1>
+                <div class="details-card">
+                    <div class="details-item details-img">
+                        <img src="./images/events/lfrr.jpg" alt="Event">
+                    </div>
+                    <div class="details-item details-category">
+                        <h5>Details</h5>
+                        <table>
+                            <tr>
+                                <td class="bold">Category</td>
+                                <td>:</td>
+                                <td>Line follower Robot</td>
+                            </tr>
+                            <tr>
+                                <td class="bold">Date</td>
+                                <td>:</td>
+                                <td class="dateEvent">Soon</td>
+                            </tr>
+                            <tr>
+                                <td class="bold">Registration Fee</td>
+                                <td>:</td>
+                                <td>1650 tk per team</td>
+                            </tr>
+                            <tr>
+                                <td class="bold">Max member in a team</td>
+                                <td>:</td>
+                                <td>3</td>
+                            </tr>
+                        </table>
+                        <p>
+                            <i>(Download Rules for more details)</i>
+                        </p>
+                    </div>
+                    <div class="details-item details-rules">
+                        <div>
+                            Love Robotics? yet not getting better place to unfurl your skills? you are in right Place .Build your bot and win.
+                        </div>
+                        <div class="prizeMoney">
+                            <h5>PRIZE MONEY</h5>
+                            <p>1st Prize: 20k Tk</p>
+                            <p>2nd Prize: 10k Tk</p>
+                        </div>
+
+                    </div>
+                    <div class="details-item details-btns">
+                        <button class="btn details-btn" id="codeStromBtn">Rules</button>
+                        <button class="btn details-btn RegisterBtn">Register</button>
+                        <div class="bold green small-font">(OFFLINE REGISTRATION DESK IS ALSO AVAILABLE TO REGISTER DIRECTLY ON THE EVENT DATE)</div>
+                        <div class="bold red small-font">* Prize money is subject to change based on the number of participants</div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="event-details 4-event">
+            <i class="fa fa-3x fa-times modal-close-btn" eventNo="4" aria-hidden="true"></i>
+            <div class="details">
+                <h1>BATTLE BOT</h1>
+                <div class="details-card">
+                    <div class="details-item details-img">
+                        <img src="./images/events/battlebot.webp" alt="Event">
+                    </div>
+                    <div class="details-item details-category">
+                        <h5>Details</h5>
+                        <table>
+                            <tr>
+                                <td class="bold">Category</td>
+                                <td>:</td>
+                                <td>BATTLE BOT</td>
+                            </tr>
+                            <tr>
+                                <td class="bold">Date</td>
+                                <td>:</td>
+                                <td class="dateEvent">Soon</td>
+                            </tr>
+                            <tr>
+                                <td class="bold">Registration Fee</td>
+                                <td>:</td>
+                                <td>1650 TK per head</td>
+                            </tr>
+                            <tr>
+                                <td class="bold">Max member in a team</td>
+                                <td>:</td>
+                                <td>5</td>
+                            </tr>
+                        </table>
+                        <p>
+                            <i>(Download Rules for more details)</i>
+                        </p>
+                    </div>
+                    <div class="details-item details-rules">
+                        <div>
+                            Want a place to prove yourself as a Warrior. We are giving you an opportunity to prove yourself and get rewarded
+                            for your Battle skill with your battle bot..
+                        </div>
+                        <div class="prizeMoney">
+                            <h5>PRIZE MONEY</h5>
+                            <p>1st Prize: 20k BDT</p>
+                            <p>2nd Prize: 10K BDT*</p>
+                        </div>
+                    </div>
+                    <div class="details-item details-btns">
+                        <button class="btn details-btn" id="photoBtn">Rules</button>
+                        <button class="btn details-btn RegisterBtn">Register</button>
+                        <div class="bold green small-font">(OFFLINE REGISTRATION DESK IS ALSO AVAILABLE TO REGISTER DIRECTLY ON THE EVENT DATE)</div>
+                        <div class="bold red small-font">* Prize money is subject to change based on the number of participants</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="event-details 5-event">
+            <i class="fa fa-3x fa-times modal-close-btn" eventNo="5" aria-hidden="true"></i>
+            <div class="details">
+                <h1>Drone Race</h1>
+                <div class="details-card">
+                    <div class="details-item details-img">
+                        <img src="images/events/drone.jpg" alt="Event">
+                    </div>
+                    <div class="details-item details-category">
+                        <h5>Details</h5>
+                        <table>
+                            <tr>
+                                <td class="bold">Category</td>
+                                <td>:</td>
+                                <td>Gaming</td>
+                            </tr>
+                            <tr>
+                                <td class="bold">Date</td>
+                                <td>:</td>
+                                <td class="dateEvent">Soon</td>
+                            </tr>
+                            <tr>
+                                <td class="bold">Registration Fee</td>
+                                <td>:</td>
+                                <td>1650 TK per team</td>
+                            </tr>
+                            <tr>
+                                <td class="bold">Max member in a team</td>
+                                <td>:</td>
+                                <td>5</td>
+                            </tr>
+                        </table>
+                        <p>
+                            <i>(Download Rules for more details)</i>
+                        </p>
+                    </div>
+                    <div class="details-item details-rules">
+                        <div>
+                            Show your skills with more of your friends better to call your CLAN. Hit the dust, Spill the blood. Reach to the top through
+                            the path of glory. Engrave your name to the wall of fame.
+                        </div>
+                        <div class="prizeMoney">
+                            <h5>PRIZE MONEY</h5>
+                            <p>1st Prize: 20K BDT</p>
+                            <p>2nd Prize: 10K BDT</p>
+                        </div>
+                    </div>
+                    <div class="details-item details-btns">
+                        <button class="btn details-btn" id="csBtn">Rules</button>
+                        <button class="btn details-btn RegisterBtn">Register</button>
+                        <div class="bold green small-font">(OFFLINE REGISTRATION DESK IS ALSO AVAILABLE TO REGISTER DIRECTLY ON THE EVENT DATE)</div>
+                        <div class="bold red small-font">* Prize money is subject to change based on the number of participants</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="event-details 6-event">
+            <i class="fa fa-3x fa-times modal-close-btn" eventNo="6" aria-hidden="true"></i>
+            <div class="details">
+                <h1>Valorant</h1>
+                <div class="details-card">
+                    <div class="details-item details-img">
+                        <img style="height:90%" src="images/events/valorant.png" alt="Event">
+                    </div>
+                    <div class="details-item details-category">
+                        <h5>Details</h5>
+                        <table>
+                            <tr>
+                                <td class="bold">Category</td>
+                                <td>:</td>
+                                <td>Gaming</td>
+                            </tr>
+                            <tr>
+                                <td class="bold">Date</td>
+                                <td>:</td>
+                                <td class="dateEvent">Soon</td>
+                            </tr>
+                            <tr>
+                                <td class="bold">Registration Fee</td>
+                                <td>:</td>
+                                <td>250tk per head</td>
+                            </tr>
+
+                        </table>
+                        <p>
+                            <i>(Download Rules for more details)</i>
+                        </p>
+                    </div>
+                    <div class="details-item details-rules">
+                        <div>
+                            Love to play Valorant? Show your skill on Valorant and win prize.
+                        </div>
+                        <div class="prizeMoney">
+                            <h5>PRIZE MONEY</h5>
+                            <p>1st Prize: 20k BDT</p>
+                            <p>2nd Prize: 20K BDT</p>
+                        </div>
+
+                    </div>
+                    <div class="details-item details-btns">
+                        <button class="btn details-btn" id="nfsBtn">Rules</button>
+                        <button class="btn details-btn RegisterBtn">Register</button>
+                        <div class="bold green small-font">(OFFLINE REGISTRATION DESK IS ALSO AVAILABLE TO REGISTER DIRECTLY ON THE EVENT DATE)</div>
+                        <div class="bold red small-font">* Prize money is subject to change based on the number of participants</div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <section id="landing-section">
+        <div class="landing">
+            <div class="logo">
+                <img src="images/logo.png" class="brainware-logo" alt="Brainware">
+                <h1>Robu Tech Fest</h1>
+                <h3>2022</h3>
+                <a style="text-decoration: none;" href="index.html" title=""><button class="btn details-btn ">Home</button></a>
+            </div>
+            <div class="darkness"></div>
+            <i class="fa fa-chevron-down fa-3x go-down" aria-hidden="true"></i>
+        </div>
+    </section>
+
+    <section class="" id="events-section">
+        <div class="container">
+            <div>
+                <h2 class="headline-section wow jackInTheBox">EVENTS</h2>
+                <h4 class="subline-section wow jackInTheBox" data-wow-duration="0.6s" data-wow-delay="0.3s">Some exciting events that are taking place</h4>
+                <hr>
+                <div class="events">
+                    <div eventNo="1" data-wow-duration="1s" class="event wow slideInLeft">
+                        <div class="card">
+                            <div class="card-item card-front">
+                                <img src="./images/events/CnS5w0GUAAAKd0Y.jpg" alt="techno-buzz">
+                                <div class="headText">
+                                    <p>Robo Soccer</p>
+                                </div>
+                            </div>
+                            <div class="card-item card-back">
+                                <img src="./images/events/CnS5w0GUAAAKd0Y.jpg" alt="techno-buzz">
+                                <div class="eventName">
+                                    <p>Robo Soccer</p>
+                                </div>
+                                <div class="headText">
+                                    <p>Know More</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div eventNo="2" data-wow-duration="1s" class="event wow fadeInDown">
+                        <div class="card">
+                            <div class="card-item card-front">
+                                <img src="./images/events/boatrace.jpg" alt="build-mech-arena">
+                                <div class="headText">
+                                    <p>Boat Race</p>
+                                </div>
+                            </div>
+                            <div class="card-item card-back">
+                                <img src="./images/events/boatrace.jpg" alt="build-mech-arena">
+                                <div class="eventName">
+                                    <p>Boat Race</p>
+                                </div>
+                                <div class="headText">
+                                    <p>Know More</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div eventNo="3" data-wow-duration="1s" class="event Right wow slideInRight">
+                        <div class="card">
+                            <div class="card-item card-front">
+                                <img src="./images/events/lfrr.jpg" alt="code-storm">
+                                <div class="headText">
+                                    <p>Line follower Robot(LFR)</p>
+                                </div>
+                            </div>
+                            <div class="card-item card-back">
+                                <img src="./images/events/lfrr.jpg" alt="code-storm">
+                                <div class="eventName">
+                                    <p>Line follower Robot(LFR)</p>
+                                </div>
+                                <div class="headText">
+                                    <p>Know More</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div eventNo="4" data-wow-duration="1s" class="event wow slideInLeft">
+                        <div class="card">
+                            <div class="card-item card-front">
+                                <img src="./images/events/battlebot.webp" alt="photography">
+                                <div class="headText">
+                                    <p>Battlle Bot Wars</p>
+                                </div>
+                            </div>
+                            <div class="card-item card-back">
+                                <img src="./images/events/battlebot.webp" alt="photography">
+                                <div class="eventName">
+                                    <p>Battlle Bot Wars</p>
+                                </div>
+                                <div class="headText">
+                                    <p>Know More</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div eventNo="5" data-wow-duration="1s" class="event wow fadeInUp">
+                        <div class="card">
+                            <div class="card-item card-front">
+                                <img src="./images/events/drone.jpg" alt="cs-go">
+                                <div class="headText">
+                                    <p>Drone Race</p>
+                                </div>
+                            </div>
+                            <div class="card-item card-back">
+                                <img src="./images/events/drone.jpg" alt="cs-go">
+                                <div class="eventName">
+                                    <p>Drone Race</p>
+                                </div>
+                                <div class="headText">
+                                    <p>Know More</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div eventNo="6" data-wow-duration="1s" class="event wow slideInRight">
+                        <div class="card">
+                            <div class="card-item card-front">
+                                <img src="./images/events/valorant.png" alt="NFS">
+                                <div class="headText">
+                                    <p>Valorant</p>
+                                </div>
+                            </div>
+                            <div class="card-item card-back">
+                                <img src="./images/events/valorant.png" alt="NFS">
+                                <div class="eventName">
+                                    <p>Valorant</p>
+                                </div>
+                                <div class="headText">
+                                    <p>Know More</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script>
+        const wowConfig = {
+            boxClass: 'wow',
+            animateClass: 'animated',
+            offset: window.innerWidth <= 750 ? 0 : 50,
+            mobile: false,
+            live: true,
+            scrollContainer: null
+        }
+        const wow = new WOW(wowConfig);
+        wow.init();
+        const registerUrl = '#';
+        const codeStromUrl = '#';
+        const csUrl = '#';
+        const nfsUrl = '#';
+        const photoUrl = '#';
+        const bmaUrl = '#';
+        const techUrl = '#';
+        const eventDate = '20/11/2022';
+
+        document.getElementById('csBtn').onclick = () => window.open(csUrl, '_blank');
+        document.getElementById('codeStromBtn').onclick = () => window.open(codeStromUrl, '_blank');
+        document.getElementById('nfsBtn').onclick = () => window.open(nfsUrl, '_blank');
+        document.getElementById('photoBtn').onclick = () => window.open(photoUrl, '_blank');
+        document.getElementById('bmaBtn').onclick = () => window.open(bmaUrl, '_blank');
+        document.getElementById('techBtn').onclick = () => window.open(techUrl, '_blank');
+
+        [...document.getElementsByClassName('RegisterBtn')].forEach(e =>
+            e.onclick = () => window.open(registerUrl, '_blank'));
+
+        [...document.getElementsByClassName('dateEvent')].forEach(e => {
+            e.innerHTML = eventDate;
+        });
+    </script>
+
+
+
+</body>
+
+
+</html>
