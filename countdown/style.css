@@ -27,9 +27,11 @@ body{
 }
 .text1{
     text-align: center;
+    margin-top: 20%;
 }
 .countdown-container{
     display: flex;
+    padding: 5rem;
 }
 
 .big-text{
